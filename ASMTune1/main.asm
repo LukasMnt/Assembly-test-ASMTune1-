@@ -1,6 +1,15 @@
 .code
-main proc
-	mov rax, 123
+SomeFunction proc
+	mov ax, -1
+	mov ah, 0
+
+	push rbx
+
+	mov bx, 50
+	mov bh, 10
+
+	pop rbx
+
 	ret
-main endp
-end
+SomeFunction endp
+end	
