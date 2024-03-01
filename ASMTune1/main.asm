@@ -1,7 +1,11 @@
 .code
 SomeFunction proc
-	mov ax, -1
-	mov ah, 0
+
+	mov r8, -1
+	mov r8d, 0 ; 32 bits pas compatible 64
+	mov r8w, -1
+	mov r8b, 0
+
 
 	push rbx
 
